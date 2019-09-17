@@ -16,7 +16,7 @@ public class Person3 {
 	 * name
 	 * @param pname the person's real name
 	 */
-	public Person3(String pname){
+	public Person3(String pname) {
 	  name = pname;
 	}
 	
@@ -41,8 +41,11 @@ public class Person3 {
 	 * @param input the string to be reversed
 	 * @return the reversed string
 	 */
-	private String calc(String input) {
-	  //Person 3 put your implementation here
-	  return null;
-	}
+    private String calc(String input) {
+        String returnString = "";
+        for (int i = input.length() - 1; i >= 0; i--) {
+            returnString += input.charAt(i);
+        }
+        return returnString;
+    }
 }
